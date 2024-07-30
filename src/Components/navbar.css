@@ -1,0 +1,76 @@
+/* Styles for the navbar */
+.navbar .bx-menu {
+    cursor: pointer;
+  }
+  
+  .navbar .bx-x {
+    cursor: pointer;
+  }
+  
+  /* Submenu styles */
+  .sub-menu {
+    display: none;
+  }
+  
+  .dropdown:hover .sub-menu {
+    display: block;
+  }
+  
+  .sub-menu {
+    position: absolute;
+    left: 0; /* Keep this to position the submenu below the parent item */
+    top: 100%; /* This positions the submenu directly below the parent */
+    background-color: #1e262d !important;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    z-index: 50;
+  }
+  
+  /* Styles for mobile view */
+  .nav-links {
+    left: -100%;
+    transition: left 0.3s ease;
+  }
+  
+  .nav-links.show {
+    left: 0;
+  }
+  
+  /* Arrow styles */
+  .arrow {
+    margin-left: 0.5rem;
+  }
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .overlay {
+    display: none;
+  }
+  
+  .overlay.show {
+    display: block;
+  }
+  
+  /* Additional styles to ensure dropdown position */
+  .nav-links .dropdown {
+    background-color: #1e262d;
+    position: relative; /* Ensure this is relative to position submenus */
+  }
+  
+  .nav-links .dropdown .sub-menu {
+    left: 0; /* This keeps the submenu aligned with the parent */
+  }
+  
+  @media (min-width: 1024px) {
+    .nav-links .dropdown .sub-menu {
+      display: none;
+    }
+  
+    .nav-links .dropdown:hover .sub-menu {
+      display: block;
+    }
+  }
+  
