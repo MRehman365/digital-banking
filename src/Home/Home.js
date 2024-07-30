@@ -8,18 +8,11 @@ import img5 from "../Assets/dmt.jpg";
 import img6 from "../Assets/pan_index.jpg";
 import img7 from "../Assets/6204100.jpg"
 import img8 from "../Assets/revenue-operation-collage.jpg"
-import img9 from "../Assets/representation-user-experience-interface-design-smartphone.jpg"
-import img10 from "../Assets/insurance.jpeg"
-import img11 from "../Assets/miniaa.jpeg"
-import logo1 from "../Assets/RBS_Logo.png"
-import logo2 from "../Assets/iso.png"
-import logo3 from "../Assets/iaf.png"
-import logo4 from "../Assets/madeinindia.png"
-import logo5 from "../Assets/iso27001.png"
-import logo6 from "../Assets/npci-logo.png"
 import { BsActivity } from "react-icons/bs";
 import { GoPerson } from "react-icons/go";
 import { LuPieChart } from "react-icons/lu";
+import Partner from "../Components/Partner";
+import Card from "../Components/Card";
 
 const Home = () => {
   return (
@@ -29,7 +22,7 @@ const Home = () => {
           <h1 class="text-4xl font-bold text-center">
             Digital Banking as a Services
           </h1>
-          <p class="mt-4 text-justify text-[#6b7280]">
+          <p class="mt-4 text-justify text-[#6b7280] leading-relaxed">
             Planet C Technology Payments has developed a Unified Open API
             Platform to revolutionize the way Digital India transacts and
             increase UI engagement, and monetary collections. Thousands of
@@ -215,65 +208,8 @@ const Home = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap justify-around gap-3 p-4 mt-10">
-              <div className="max-w-md rounded-lg  bg-card shadow-md">
-                <img className="rounded-t-lg w-full h-auto" src={img9} alt="DMT Service" />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-foreground">DMT</h2>
-                  <p className="text-[#374151] leading-relaxed">
-                    DMT is a cash-to-bank-account remittance service provided by business correspondents. A retailer can provide Planet C Technology domestic money transfer (DMT) service from their shop and
-                    help customers transfer money to any nationalised and private banks that operate in India and support NEFT/IMPS.
-                  </p>
-                  <div className="mt-4">
-                    <span className="text-black bg-[#e5e7eb] rounded-full py-1 px-2 ml-2 text-[0.8rem]">#DMT</span>
-                    <span className="text-black bg-[#e5e7eb] rounded-full py-1 px-2 ml-2 text-[0.8rem]">#Bankopen</span>
-                    <span className="text-black bg-[#e5e7eb] rounded-full py-1 px-2 ml-2 text-[0.8rem]">#Planettechnology</span>
-                  </div>
-                </div>
-              </div>
-              <div className="max-w-md rounded-lg  bg-card shadow-md">
-                <img className="rounded-t-lg w-full h-auto" src={img10} alt="Insurance Service" />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-foreground">Insurance</h2>
-                  <p className="text-[#374151] leading-relaxed">
-                    With Planet C Technology, a retailer gets a chance to be part of a growing insurance network and help customers navigate insurance product uncertainties. They can provide a wide range of
-                    insurance products like 2-wheeler insurance, commercial insurance, and shop insurance and hospitality directly from their shop.
-                  </p>
-                  <div className="mt-4">
-                    <span className="text-black bg-[#e5e7eb] rounded-full py-1 px-2 ml-2 text-[0.8rem]">#Pancard</span>
-                    <span className="text-black bg-[#e5e7eb] rounded-full py-1 px-2 ml-2 text-[0.8rem]">#BBPS</span>
-                    <span className="text-black bg-[#e5e7eb] rounded-full py-1 px-2 ml-2 text-[0.8rem]">#Loan</span>
-                  </div>
-                </div>
-              </div>
-              <div className="max-w-md rounded-lg  bg-card shadow-md">
-                <img className="rounded-t-lg w-full h-auto" src={img11} alt="Micro ATM" />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-foreground">Micro ATM</h2>
-                  <p className="text-[#374151] leading-relaxed">
-                    Micro ATM is a device for Business Correspondents (BC) to deliver essential banking services to customers. These Correspondents, who could be a small store owner, will serve as a 'micro
-                    ATM' to conduct instant transactions. They will use a device that will let you transfer money via your Aadhaar linked bank account by merely authenticating your fingerprint.
-                  </p>
-                  <div className="mt-4">
-                    <span className="text-black bg-[#e5e7eb] rounded-full py-1 px-2 ml-2 text-[0.8rem]">#AEPS Payment</span>
-                    <span className="text-black bg-[#e5e7eb] rounded-full py-1 px-2 ml-2 text-[0.8rem]">#UPI</span>
-                    <span className="text-black bg-[#e5e7eb] rounded-full py-1 px-2 ml-2 text-[0.8rem]">#Recharge</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#94a3b8] p-4 overflow-hidden mb-2">
-  <div className="flex justify-around animate-marquee">
-    <img alt="ISO Certification" src={logo1} className="w-[20rem] h-auto object-cover"/>
-    <img alt="ISO 27001" src={logo2} className="w-[10rem] h-auto object-contain"/>
-    <img alt="Make in India" src={logo3} className="w-[10rem] h-auto object-contain"/>
-    <img alt="NPCI" src={logo4} className="w-[10rem] h-auto object-contain" />
-    <img alt="RBS" src={logo5} className="w-[10rem] h-auto object-contain" />
-    <img alt="Startup India" src={logo6} className="w-[10rem] h-auto object-contain" />
-  </div>
-</div>
-
+                <Card/>
+            <Partner/>
     </div>
   );
 };

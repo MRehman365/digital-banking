@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -6,40 +7,39 @@ const Footer = () => {
       <footer className="bg-card text-card-foreground p-6">
               <div className=" mx-auto flex flex-col md:flex-row justify-between">
                 <div className="flex-1">
-                  <h3 className="font-bold">DBOS</h3>
+                  <h3 className="font-bold">SERVICES</h3>
                   <ul className="mt-2">
-                    <li>Micro ATM</li>
-                    <li>UPI QR</li>
-                    <li>Domestic Money Transfer</li>
-                    <li>Insurance</li>
+                    <li><Link to='/atm'>Micro ATM</Link></li>
+                    <li><Link to='/whitelable'>Whitelable Software</Link></li>
+                    <li><Link to='/mlm'>MLM Development</Link></li>
+                    <li><Link to='/insurance'>Insurance</Link></li>
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold">Consumers</h3>
+                  <h3 className="font-bold">Products</h3>
                   <ul className="mt-2">
-                    <li>Bank Account</li>
-                    <li>Payments</li>
-                    <li>Loans</li>
-                    <li>Investments</li>
-                    <li>Insurance</li>
+                    <li><Link to='/whitelable'>Whitelable Software</Link></li>
+                    <li><Link to='/realestate'>Real Estate Software</Link></li>
+                    <li><Link to='/mlm'>MLM Development</Link></li>
+                    <li><Link to='/cms'>CMS</Link></li>
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold">Policies</h3>
+                  <h3 className="font-bold">Popular</h3>
                   <ul className="mt-2">
-                    <li>ERP Policy</li>
-                    <li>KYC Policy</li>
-                    <li>Performance Evaluation Policy</li>
-                    <li>Terms of Use - Merchants</li>
+                    <li><Link to='/insurance'>Insurance</Link></li>
+                    <li><Link to='/whitelable'>Whitelable software</Link></li>
+                    <li><Link to='/atm'>Micro ATM</Link></li>
+                    <li><Link to='/realestate'>Real Estate Software</Link></li>
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold">Legal</h3>
+                  <h3 className="font-bold">Genral</h3>
                   <ul className="mt-2">
-                    <li>Disclaimer</li>
-                    <li>Annual Report 22-23</li>
-                    <li>Annual Return 22-23</li>
-                    <li>Privacy</li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/about'>About Us</Link></li>
+                    <li><Link to='/contact'>Contact Us</Link></li>
+                    <li><Link to='/login'>Login</Link></li>
                   </ul>
                 </div>
               </div>

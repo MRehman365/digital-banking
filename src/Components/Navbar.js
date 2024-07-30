@@ -68,7 +68,7 @@ const Navbar = () => {
             <li className=''>
               <Link to="/">Home</Link>
             </li>
-            <li className="dropdown" onClick={() => handleDropdownToggle(0)}>
+            {/* <li className="dropdown" onClick={() => handleDropdownToggle(0)}>
               <Link to="/our-practice">API'S <FaChevronDown className="arrow inline-block lg:hidden" /></Link>
               {dropdownOpen === 0 && (
                 <ul className="sub-menu mt-2 space-y-2 bg-[#1e262d] lg:absolute lg:mt-0 p-2 lg:w-48 lg:rounded-lg lg:shadow-md">
@@ -80,19 +80,22 @@ const Navbar = () => {
                   </li>
                 </ul>
               )}
-            </li>
+            </li> */}
             <li className="dropdown" onClick={() => handleDropdownToggle(1)}>
               <Link to="#">SERVICES <FaChevronDown className="arrow inline-block lg:hidden" /></Link>
               {dropdownOpen === 1 && (
-                <ul className="sub-menu mt-2 space-y-2 bg-[#1e262d] lg:absolute lg:mt-0 p-2 lg:w-48 lg:rounded-lg lg:shadow-md">
+                <ul className="sub-menu text-[0.8rem] mt-2 space-y-5 bg-[#1e262d] lg:absolute lg:mt-0 p-2 lg:w-48 lg:rounded-lg lg:shadow-md">
                   <li>
-                    <Link to="/treatment-kids">ORTHODONTICS FOR KIDS</Link>
+                    <Link to="/insurance">INSURANCE</Link>
                   </li>
                   <li>
-                    <Link to="/treatment-teens">ORTHODONTICS FOR TEEN</Link>
+                    <Link to="/atm">MICRO ATM</Link>
                   </li>
                   <li>
-                    <Link to="/treatment-adult">ORTHODONTICS FOR ADULTS</Link>
+                    <Link to="/whitelable">WHITELABLE SOFTWARE</Link>
+                  </li>
+                  <li>
+                    <Link to="/mlm">MLM DEVELOPMENT</Link>
                   </li>
                 </ul>
               )}
@@ -100,29 +103,32 @@ const Navbar = () => {
             <li className="dropdown" onClick={() => handleDropdownToggle(2)}>
               <Link to="#">PRODUCTS <FaChevronDown className="arrow inline-block lg:hidden" /></Link>
               {dropdownOpen === 2 && (
-                <ul className="sub-menu mt-2 space-y-2 bg-[#1e262d] lg:absolute lg:mt-0 p-2 lg:w-48 lg:rounded-lg lg:shadow-md">
+                <ul className="sub-menu text-[0.8rem] mt-2 space-y-5 bg-[#1e262d] lg:absolute lg:mt-0 p-2 lg:w-48 lg:rounded-lg lg:shadow-md">
                   <li>
-                    <Link to="/invisalign-treatment">INVISALIGN TREATMENT</Link>
+                  <Link to="/whitelable">WHITELABLE SOFTWARE</Link>
                   </li>
                   <li>
-                    <Link to="/what-are-invisalign-braces">WHAT ARE INVISALIGN BRACES</Link>
+                  <Link to="/mlm">MLM DEVELOPMENT</Link>
                   </li>
                   <li>
-                    <Link to="/invisalign-cost-process">INVISALIGN COST PROCESS</Link>
+                    <Link to="/realestate">REAL ESTATE SOFTWARES</Link>
+                  </li>
+                  <li>
+                    <Link to="/cms">CMS</Link>
                   </li>
                 </ul>
               )}
             </li>
             <li className="dropdown" onClick={() => handleDropdownToggle(3)}>
-              <Link to="/contact">CONTACT US <FaChevronDown className="arrow inline-block lg:hidden" /></Link>
+              <Link to="/contact">CONTACT US </Link>
               
             </li>
             <li className="dropdown" onClick={() => handleDropdownToggle(4)}>
-              <Link to="/about">ABOUT US <FaChevronDown className="arrow inline-block lg:hidden" /></Link>
+              <Link to="/about">ABOUT US </Link>
               
             </li>
             <li>
-              <Link to="/contact">SIGN UP/LOGIN</Link>
+              <Link to="/login">SIGN UP/LOGIN</Link>
             </li>
           </ul>
         </div>

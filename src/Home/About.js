@@ -1,16 +1,26 @@
 import React from "react";
 import img1 from "../Assets/45106.jpg";
+import img2 from "../Assets/3d-render-money-transfer-mobile-banking-online.jpg";
 import { GiThreeFriends } from "react-icons/gi";
 import { FaUsers } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa6";
 import { RiSecurePaymentLine } from "react-icons/ri";
+import {
+  FiShield,
+  FiHeart,
+  FiAnchor,
+  FiUser,
+  FiCheckCircle,
+} from "react-icons/fi";
 
 const About = () => {
   return (
     <div className="mt-[70px]">
       <div className="flex flex-col md:flex-row items-center justify-between p-6 bg-background">
         <div className="md:w-1/2">
-          <h2 className="text-2xl font-bold sm:text-center md:text-left">About Us</h2>
+          <h2 className="text-2xl font-bold sm:text-center md:text-left">
+            About Us
+          </h2>
           <p className="mt-4 text-[#6b7280] leading-relaxed sm:text-center md:text-left">
             Planet C Technology is driven by a vision to grow and lead digital
             banking as a service in the country with its financial super App
@@ -78,6 +88,127 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <div className="flex flex-col md:flex-row items-center justify-between p-6 bg-white">
+        <div className="relative w-full md:w-1/2 flex flex-col space-y-6">
+          {/* Vertical Line */}
+          <div className="absolute left-5 top-[7%] bottom-[12%] w-[2px] bg-gray-300"></div>
+
+          {/* Integrity */}
+          <div className="flex items-start space-x-4 relative">
+            <div className="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center relative z-10">
+              <FiShield />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">Integrity</h3>
+              <p
+                className="text-[#6b7280] leading-relaxed"
+                about="1">
+                We endorse honesty in all our actions.
+              </p>
+            </div>
+          </div>
+
+          {/* Trust */}
+          <div className="flex items-start space-x-4 relative">
+            <div className="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center relative z-10">
+              <FiHeart />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">Trust</h3>
+              <p className="text-[#6b7280] leading-relaxed">
+                We honour the promises made to you.
+              </p>
+            </div>
+          </div>
+
+          {/* Customer First */}
+          <div className="flex items-start space-x-4 relative">
+            <div className="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center relative z-10">
+              <FiAnchor />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">Customer First</h3>
+              <p className="text-[#6b7280] leading-relaxed">
+                We place our customers at the heart of what we do.
+              </p>
+            </div>
+          </div>
+
+          {/* Transparency */}
+          <div className="flex items-start space-x-4 relative">
+            <div className="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center relative z-10">
+              <FiUser />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">Transparency</h3>
+              <p className="text-[#6b7280] leading-relaxed">
+                We take pride in communicating our beliefs and decisions with
+                complete openness.
+              </p>
+            </div>
+          </div>
+
+          {/* Finish */}
+          <div className="flex items-start space-x-4 relative">
+            <div className="flex-shrink-0 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center relative z-10">
+              <FiCheckCircle />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">FINISH</h3>
+              <p className="text-[#6b7280] leading-relaxed">
+                Pitchfork ugh tattooed scenester echo park gastropub whatever
+                cold-pressed retro.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-8 md:mt-0 w-full md:w-1/2 flex justify-center">
+          <img src={img2} alt="Illustration" className="w-full h-auto" />
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row justify-around p-4 bg-background mb-2">
+        <div className="text-center md:w-1/3 px-6">
+          <h3 className="font-bold text-lg">API</h3>
+          <p className="text-[#6b7280] leading-relaxed">
+            Planettechnology Provide Api Recharge, Aeps, Dmt, Nsdl Pan, Uti Pan,
+            Payout, PG, Fastag, CMS etc:
+          </p>
+          <div className="w-full bg-border h-1 my-2">
+            <div className="bg-[blue] h-[2px] w-[80px] mx-auto"></div>
+          </div>
+          <span className="text-sm text-[#6b7280] leading-relaxed">
+            ALL API
+          </span>
+        </div>
+        <div className="text-center md:w-1/3 px-6">
+          <h3 className="font-bold text-lg">UI/UX</h3>
+          <p className="text-[#6b7280] leading-relaxed">
+            Rated one of the best UI/UX design companies in India, humanizing
+            technology for product adoption & retention
+          </p>
+          <div className="w-full bg-border h-1 my-2">
+            <div className="bg-[blue] h-[2px] w-[80px] mx-auto"></div>
+          </div>
+          <span className="text-sm text-[#6b7280] leading-relaxed">
+            UI Developer
+          </span>
+        </div>
+        <div className="text-center md:w-1/3 px-6">
+          <h3 className="font-bold text-lg">Android Development</h3>
+          <p className="text-[#6b7280] leading-relaxed">
+            We develop, maintain and update customized Data-Centric Applications
+            that are 100% secure
+          </p>
+          <div className="w-full bg-border h-1 my-2">
+            <div className="bg-[blue] h-[2px] w-[80px] mx-auto"></div>
+          </div>
+          <span className="text-sm text-[#6b7280] leading-relaxed">
+            APP Develop
+          </span>
+        </div>
+      </div>
     </div>
   );
 };
